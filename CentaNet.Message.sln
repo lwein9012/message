@@ -1,0 +1,140 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web Server", "Web Server", "{78E7528C-174B-476B-8370-9D01E5ED91A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message.Service", "Message.Service\Message.Service.csproj", "{21D4FEA6-3C2F-4BF1-B413-10194F55C74F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{C1799FC8-96A5-49BF-BECD-9738056C8422}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message.Common", "Message.Common\Message.Common.csproj", "{D1207CF6-BCE8-4882-AA7C-1A5549F7B0EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{A1CB0183-06B3-4392-BFDA-0D8E537FD13A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface", "Interface", "{9D002EC2-9658-4DCC-8C4B-12E42BB0B33B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message.Interface", "Message.Interface\Message.Interface.csproj", "{E4D6D3AC-231B-42B0-9D36-1A4AE8E4D146}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message.Model", "Message.Model\Message.Model.csproj", "{BB988FD8-619A-490D-BF00-107416E97348}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{E6AAADB2-82DA-4788-9BD2-8FDCEAF785B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message.LogServer", "Message.LogServer\Message.LogServer.csproj", "{ABDB74BD-B04E-4192-BCB2-617C7247C789}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message.ServerManager", "Message.ServerManager\Message.ServerManager.csproj", "{7C4A1449-23C4-47A8-B095-20E85AF46C88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message.Queue.Redis", "Message.Queue.Redis\Message.Queue.Redis.csproj", "{7306CCF8-C0FD-40E5-83E9-E479686FEB00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message.Web", "Message.Web\Message.Web.csproj", "{FE767230-8945-43D5-8C9D-8C86E1B1B320}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message.ServiceFrm", "Message.ServiceFrm\Message.ServiceFrm.csproj", "{742090CB-8226-45AC-8E79-16B0D660A108}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://10.58.1.230:8070/tfs/dev
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ConsoleApplication1\\ConsoleApplication1.csproj
+		SccProjectName1 = ConsoleApplication1
+		SccLocalPath1 = ConsoleApplication1
+		SccProjectUniqueName2 = Message.Common\\Message.Common.csproj
+		SccProjectTopLevelParentUniqueName2 = CentaNet.Message.sln
+		SccProjectName2 = Message.Common
+		SccLocalPath2 = Message.Common
+		SccProjectUniqueName3 = Message.Interface\\Message.Interface.csproj
+		SccProjectTopLevelParentUniqueName3 = CentaNet.Message.sln
+		SccProjectName3 = Message.Interface
+		SccLocalPath3 = Message.Interface
+		SccProjectUniqueName4 = Message.LogServer\\Message.LogServer.csproj
+		SccProjectTopLevelParentUniqueName4 = CentaNet.Message.sln
+		SccProjectName4 = Message.LogServer
+		SccLocalPath4 = Message.LogServer
+		SccProjectUniqueName5 = Message.Model\\Message.Model.csproj
+		SccProjectTopLevelParentUniqueName5 = CentaNet.Message.sln
+		SccProjectName5 = Message.Model
+		SccLocalPath5 = Message.Model
+		SccProjectUniqueName6 = Message.Queue.Redis\\Message.Queue.Redis.csproj
+		SccProjectTopLevelParentUniqueName6 = CentaNet.Message.sln
+		SccProjectName6 = Message.Queue.Redis
+		SccLocalPath6 = Message.Queue.Redis
+		SccProjectUniqueName7 = Message.ServerManager\\Message.ServerManager.csproj
+		SccProjectTopLevelParentUniqueName7 = CentaNet.Message.sln
+		SccProjectName7 = Message.ServerManager
+		SccLocalPath7 = Message.ServerManager
+		SccProjectUniqueName8 = Message.Service\\Message.Service.csproj
+		SccProjectTopLevelParentUniqueName8 = CentaNet.Message.sln
+		SccProjectName8 = Message.Service
+		SccLocalPath8 = Message.Service
+		SccProjectUniqueName9 = Message.ServiceFrm\\Message.ServiceFrm.csproj
+		SccProjectTopLevelParentUniqueName9 = CentaNet.Message.sln
+		SccProjectName9 = Message.ServiceFrm
+		SccLocalPath9 = Message.ServiceFrm
+		SccProjectUniqueName10 = Message.Web\\Message.Web.csproj
+		SccProjectTopLevelParentUniqueName10 = CentaNet.Message.sln
+		SccProjectName10 = Message.Web
+		SccLocalPath10 = Message.Web
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21D4FEA6-3C2F-4BF1-B413-10194F55C74F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21D4FEA6-3C2F-4BF1-B413-10194F55C74F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21D4FEA6-3C2F-4BF1-B413-10194F55C74F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21D4FEA6-3C2F-4BF1-B413-10194F55C74F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1207CF6-BCE8-4882-AA7C-1A5549F7B0EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1207CF6-BCE8-4882-AA7C-1A5549F7B0EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1207CF6-BCE8-4882-AA7C-1A5549F7B0EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1207CF6-BCE8-4882-AA7C-1A5549F7B0EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1CB0183-06B3-4392-BFDA-0D8E537FD13A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1CB0183-06B3-4392-BFDA-0D8E537FD13A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1CB0183-06B3-4392-BFDA-0D8E537FD13A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1CB0183-06B3-4392-BFDA-0D8E537FD13A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4D6D3AC-231B-42B0-9D36-1A4AE8E4D146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4D6D3AC-231B-42B0-9D36-1A4AE8E4D146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4D6D3AC-231B-42B0-9D36-1A4AE8E4D146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4D6D3AC-231B-42B0-9D36-1A4AE8E4D146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB988FD8-619A-490D-BF00-107416E97348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB988FD8-619A-490D-BF00-107416E97348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB988FD8-619A-490D-BF00-107416E97348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB988FD8-619A-490D-BF00-107416E97348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABDB74BD-B04E-4192-BCB2-617C7247C789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABDB74BD-B04E-4192-BCB2-617C7247C789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABDB74BD-B04E-4192-BCB2-617C7247C789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABDB74BD-B04E-4192-BCB2-617C7247C789}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C4A1449-23C4-47A8-B095-20E85AF46C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C4A1449-23C4-47A8-B095-20E85AF46C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C4A1449-23C4-47A8-B095-20E85AF46C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C4A1449-23C4-47A8-B095-20E85AF46C88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7306CCF8-C0FD-40E5-83E9-E479686FEB00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7306CCF8-C0FD-40E5-83E9-E479686FEB00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7306CCF8-C0FD-40E5-83E9-E479686FEB00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7306CCF8-C0FD-40E5-83E9-E479686FEB00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE767230-8945-43D5-8C9D-8C86E1B1B320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE767230-8945-43D5-8C9D-8C86E1B1B320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE767230-8945-43D5-8C9D-8C86E1B1B320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE767230-8945-43D5-8C9D-8C86E1B1B320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{742090CB-8226-45AC-8E79-16B0D660A108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{742090CB-8226-45AC-8E79-16B0D660A108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{742090CB-8226-45AC-8E79-16B0D660A108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{742090CB-8226-45AC-8E79-16B0D660A108}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{21D4FEA6-3C2F-4BF1-B413-10194F55C74F} = {78E7528C-174B-476B-8370-9D01E5ED91A0}
+		{FE767230-8945-43D5-8C9D-8C86E1B1B320} = {78E7528C-174B-476B-8370-9D01E5ED91A0}
+		{742090CB-8226-45AC-8E79-16B0D660A108} = {78E7528C-174B-476B-8370-9D01E5ED91A0}
+		{D1207CF6-BCE8-4882-AA7C-1A5549F7B0EF} = {C1799FC8-96A5-49BF-BECD-9738056C8422}
+		{E4D6D3AC-231B-42B0-9D36-1A4AE8E4D146} = {9D002EC2-9658-4DCC-8C4B-12E42BB0B33B}
+		{BB988FD8-619A-490D-BF00-107416E97348} = {9D002EC2-9658-4DCC-8C4B-12E42BB0B33B}
+		{ABDB74BD-B04E-4192-BCB2-617C7247C789} = {E6AAADB2-82DA-4788-9BD2-8FDCEAF785B2}
+		{7C4A1449-23C4-47A8-B095-20E85AF46C88} = {E6AAADB2-82DA-4788-9BD2-8FDCEAF785B2}
+		{7306CCF8-C0FD-40E5-83E9-E479686FEB00} = {E6AAADB2-82DA-4788-9BD2-8FDCEAF785B2}
+	EndGlobalSection
+EndGlobal

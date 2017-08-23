@@ -1,0 +1,112 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section heads {
+    <style type="text/css">
+        td {
+            background: white;
+        }
+
+        th {
+            background: white;
+        }
+    </style>
+}
+<div>
+    <h3>发布消息应用</h3>
+    <table style="width: 750px; background: #666">
+        <thead style="text-align: center; ">
+            <tr>
+                <th>应用编号</th>
+                <th>事件</th>
+                <th>描述</th>
+                <th>状态</th>
+            </tr>
+        </thead>
+        <tbody id="apps">
+            <tr v-for="app in apps">
+                <td>{{app.AppNo}}</td>
+                <td>{{app.AppEvent}}</td>
+                <td>{{app.Description}}</td>
+                <td>{{app.Enabled}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    <h3>订阅消息应用</h3>
+    <table style="width: 750px; background: #666">
+        <thead style="text-align: center; ">
+            <tr>
+                <th>应用编号</th>
+                <th>被订阅应用</th>
+                <th>被订阅应用事件</th>
+                <th>说明</th>
+                <th>状态</th>
+            </tr>
+        </thead>
+        <tbody id="submsgs">
+            <tr v-for="msg in submsgs">
+                <td>{{msg.AppNo}}</td>
+                <td>{{msg.PubAppNo}}</td>
+                <td>{{msg.PubAppEvent}}</td>
+                <td>{{msg.Description}}</td>
+                <td>{{msg.Enabled}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+@section scripts {
+    <script type="text/javascript">
+        var pagedata = {
+            app: {
+                apps: []
+            },
+            submsg: {
+                submsgs: []
+            }
+        };
+        var apps = new Vue({
+            el: "#apps",
+            data: pagedata.app
+        });
+        var submsgs = new Vue({
+            el: "#submsgs",
+            data: pagedata.submsg
+        });
+    </script>
+    <script type="text/javascript">
+        function GetApps() {
+            Vue.http.post("@Url.Action("GetApps", "AjaxJson")", {}).then(function (data) {
+                if (data.body.ResultNo == 0) {
+                    pagedata.app.apps = data.body.Result;
+                }
+            });;
+        }
+
+        GetApps();
+
+        function GetSubMsgs() {
+            Vue.http.post("@Url.Action("GetSubMsgs", "AjaxJson")", {}).then(function (data) {
+                if (data.body.ResultNo == 0) {
+                    pagedata.submsg.submsgs = data.body.Result;
+                }
+            });;
+        }
+
+        GetSubMsgs();
+        function addApp(appno, appEvent, description, enabled) {
+            Vue.http.post("@Url.Action("SaveApp", "AjaxJson")", { appno: appno, appevent: appEvent, description: description, enabled: enabled }).then(function (data) {
+                console.log(data.body);
+                GetApps();
+            });
+        }
+
+        function addSubMsg(appno, pubappno, pubappevent, receivetype, receivecontent, enabled) {
+            Vue.http.post("@Url.Action("SaveSubMsg", "AjaxJson")", { appno: appno, pubappno: pubappno, pubappevent: pubappevent, receivetype: receivetype, receivecontent: receivecontent, enabled: enabled }).then(function (data) {
+                console.log(data.body);
+                GetSubMsgs();
+            });
+        }
+    </script>
+}
